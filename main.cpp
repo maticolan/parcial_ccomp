@@ -13,8 +13,13 @@ void funcion_04();
 void funcion_05();
 void funcion_06();
 
-int main()
-{
+int main(){
+  cout<<"/**************************************************/\n";
+  cout<<"-----------------EXAMEN PARCIAL--------------------\n";
+  cout<<"Alumno: Matias Alessando Colan Vera\n";
+  cout<<"Curso de Ciencia de la Computacion\n";
+  cout<<"UCSP - 2022 - II\n";
+  cout<<"/**************************************************/\n";
   int opcion;
   do
   {
@@ -227,4 +232,32 @@ void funcion_06()
         cout<<"Este numero no esta en la matriz.";
       }
   cout<<"\n";
+}
+void funcion_07() 
+{
+    cout<<"\t Multiplos de 5\n"; 
+    for (i=0;i<10;i++)
+  {
+    for (j=0;j<10;j++)
+    {
+      
+      if(matriz[i][j]%5==0)
+      {
+        cout<<"  ["<<matriz[i][j]<<"] posicion ["<<i+1<<","<<j+1<<"] resultado ["<<matriz[i][j]*10<<"]\n";
+        }
+      }
+    }
+}
+
+void funcion_08()
+{
+  for (int i = 0; i < 10; ++i)
+  {
+    for (int j = 0; j < 10; ++j)
+    {
+      cout<<matriz[j][i]<<" ";
+    }
+  cout<<endl;  
+  cout<<'\n';  
+  }
 }
