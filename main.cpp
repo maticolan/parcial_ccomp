@@ -12,14 +12,19 @@ void funcion_03();
 void funcion_04();
 void funcion_05();
 void funcion_06();
+void funcion_07();
+void funcion_08();
 
 int main(){
-  cout<<"/**************************************************/\n";
+
+  cout<<"/******************/\n";
   cout<<"-----------------EXAMEN PARCIAL--------------------\n";
-  cout<<"Alumno: Matias Alessando Colan Vera\n";
+  cout<<"Alumnos: Matias Alessandro Colan Vera\n";
+  cout<<"         Alyson Gisely Perez Flores\n";
   cout<<"Curso de Ciencia de la Computacion\n";
   cout<<"UCSP - 2022 - II\n";
-  cout<<"/**************************************************/\n";
+  cout<<"/******************/\n";
+
   int opcion;
   do
   {
@@ -33,6 +38,8 @@ int main(){
       case 4: funcion_04(); break;
       case 5: funcion_05(); break;
       case 6: funcion_06(); break;
+      case 7: funcion_07(); break;
+      case 8: funcion_08(); break;
       default: cout<<"Try again.\n \n";
     }
   } while (opcion != 0);
@@ -43,14 +50,16 @@ int menu()
 {
   int opcion;
 
-  cout<<"Menu Principal\n";
-  cout<<"0. Salir\n";
-  cout<<"1. Funcion 1\n";
-  cout<<"2. Funcion 2\n";
-  cout<<"3. Funcion 3\n";
-  cout<<"4. Funcion 4\n";
-  cout<<"5. Funcion 5\n";
-  cout<<"6. Funcion 6\n";
+  cout<<"-------Menu Principal-------\n";
+  cout<<"       0. Salir\n";
+  cout<<"       1. Funcion 1\n";
+  cout<<"       2. Funcion 2\n";
+  cout<<"       3. Funcion 3\n";
+  cout<<"       4. Funcion 4\n";
+  cout<<"       5. Funcion 5\n";
+  cout<<"       6. Funcion 6\n";
+  cout<<"       7. Funcion 7\n";
+  cout<<"       8. Funcion 8\n";
   cout << "\n";
   cout << "Seleccione una opcion: ";
   cin >> opcion;
@@ -224,18 +233,12 @@ void funcion_06()
       {
         matriz[fila][columna]=nmayor;
       }
-
     }
   }
-  if (nmenor!=matriz[fila][columna])
-      {
-        cout<<"Este numero no esta en la matriz.";
-      }
-  cout<<"\n";
 }
+
 void funcion_07() 
-{
-    cout<<"\t Multiplos de 5\n"; 
+{ 
     for (i=0;i<10;i++)
   {
     for (j=0;j<10;j++)
@@ -243,10 +246,11 @@ void funcion_07()
       
       if(matriz[i][j]%5==0)
       {
-        cout<<"  ["<<matriz[i][j]<<"] posicion ["<<i+1<<","<<j+1<<"] resultado ["<<matriz[i][j]*10<<"]\n";
+        matriz[i][j]=matriz[i][j]*10;
         }
       }
     }
+    cout<<"\n";
 }
 
 void funcion_08()
