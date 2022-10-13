@@ -59,7 +59,6 @@ void funcion_02()
   {
     for (int j = 0; j < 10; ++j)
     {
-      matriz[i][j] = rand() % 99;
       cout<<matriz[i][j]<<" ";
     }
   cout<<endl;  
